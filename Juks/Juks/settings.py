@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'Juks.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jukaykayatbp.mysql.pythonanywhere-services.com',
-        'USER': 'jukaykayatbp',
+        'NAME': 'jukaykay$default',
+        'USER': 'jukaykay',
         'PASSWORD':'chenpots08173',
-        'HOST': 'jukaykayatbp.mysql.pythonanywhere-services.com',
+        'HOST': 'jukaykay.mysql.pythonanywhere-services.com',
     }
 }
 
