@@ -1,0 +1,47 @@
+{% extends 'base_app/base.html' %}
+
+{% block body_block %}
+<body id="header6">
+<div id="page-top"></div>
+<div class="outer-wrapper">
+  <div class="header-wrap">
+
+    <!-- HEADER -->
+    <header id="header-main">
+    <div class="container">
+      <div class="navbar yamm navbar-default">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          </div>
+
+        <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="page-scroll"><a href="/base_app/home">Home</a></li>
+						<li class="page-scroll"><a href="/base_app/register">Sign-up</a></li>
+						<li class="page-scroll"><a href="/base_app/user_login">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	</div>
+<div class="jumbotron">
+  <h1>Please Login</h1>
+  <form action="{% url 'base_app:user_login' %}" method="post">
+    {% csrf_token %}
+    <label for="username">username:</label>
+    <input type="text" name="username" placeholder="Enter Username:">
+
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+
+    <input type="submit" name="" value="Login">
+
+  </form>
+</div>
+</body>
+{% endblock  %}

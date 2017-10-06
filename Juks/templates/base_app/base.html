@@ -1,0 +1,143 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<title>JUKAYKAYATBP</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css"/>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="{% static "js/owl-carousel/owl.carousel.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/owl-carousel/owl.theme.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/owl-carousel/owl.transitions.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/rs-plugin/css/settings.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/flexslider/flexslider.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/isotope/isotope.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/jquery-ui.css" %}"/>
+	<link rel="stylesheet" href="{% static "js/magnific-popup/magnific-popup.css" %}"/>
+	<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Icon Fonts -->
+	<link rel="stylesheet" href="{% static "css/icomoon/style.css" type="text/css" %}"/>
+	<link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css" type="text/css" %}"/>
+
+	<!-- SKIN -->
+	<link rel="stylesheet" href="{% static "css/color-scheme/default-black.css" type="text/css" %}"/>
+
+	<style>
+	#signup {
+		margin-top: 0px;
+
+	}
+	form {
+	  margin: 12% auto;
+	  width: 19em;
+	  text-align: center;
+	  position: relative;
+	  -webkit-animation: moveDown .3s;
+	  -moz-animation: moveDown .3s;
+	  animation: moveDown .3s;
+	  -webkit-animation-fill-mode: forwards;
+	  -moz-animation-fill-mode: forwards;
+	  animation-fill-mode: forwards;
+	}
+
+
+	input {
+
+		display: block;
+		height: 2em;
+		width: 20em;
+		margin-bottom: 5%;
+		padding: 0 3%;
+		position: relative;
+		z-index: 0;
+		-webkit-transition: border .25s;
+		-moz-transition: border .25s;
+		-o-transition: border .25s;
+		transition: border .25s;
+		color: black;
+	}
+
+		input:focus {
+		  color: #111;
+		  border-color: #444;
+		}
+
+	</style>
+</head>
+<body id="header6">
+<div id="page-top"></div>
+<div class="outer-wrapper">
+	<div class="header-wrap">
+
+		<!-- HEADER -->
+		<header id="header-main">
+		<div class="container">
+			<div class="navbar yamm navbar-default">
+				<div class="navbar-header">
+					<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="{% static "images/basic/jky.png" %}" width="40"  alt=""/></a>
+				</div>
+
+				<!-- SEARCH -->
+				<div class="header-x pull-right">
+					<div class="s-search">
+						<div class="ss-trigger"><i class="icon-search2"></i></div>
+						<div class="ss-content">
+							<span class="ss-close icon-cross2"></span>
+							<div class="ssc-inner">
+								<form>
+									<input type="text" placeholder="Type Search text here...">
+									<button type="submit"><i class="icon-search2"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="page-scroll"><a href="#page-top">Home</a></li>
+						<li class="page-scroll"><a href="#8">About Us</a></li>
+						<li class="page-scroll"><a href="#2">Services</a></li>
+
+
+						<li class="page-scroll"><a href="#6">Products</a></li>
+
+						<li class="page-scroll"><a href="#7">Contact</a></li>
+						<li class="page-scroll"><a href="/base_app/register">Sign-up</a></li>
+						<li class="page-scroll"><a href="/base_app/user_login">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	</div>
+</div>
+<div class="container">
+  {% block  body_block %}
+
+  {% endblock  %}
+</div>
+</body>
+</html>
